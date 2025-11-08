@@ -5,10 +5,11 @@ function RoleDice({ roleDice, currentDice }) {
   return (
     <DiceContainer>
       <div className="dice" onClick={roleDice}>
-       <img 
+      <img 
+    // This MUST match the case: /Images/dice/
     src={`/Images/dice/dice_${currentDice}.png`} 
     alt={`dice ${currentDice}`} 
-/>
+    />
       </div>
       <p>Click on Dice to roll</p>
     </DiceContainer>
