@@ -1,4 +1,4 @@
-import dice from '../assets/dices.png'
+
 import styled from 'styled-components'
 import {Button } from '../styled/button'
 
@@ -23,7 +23,7 @@ function StartGame({toggle}) {
   return (
     <Container>
       <div>
-        <img src={dice} alt='Dice' />
+        <img src="/dice.png" alt='Dice' />
       </div>
       <div className='content'>
         <h1>DICE GAME</h1>
