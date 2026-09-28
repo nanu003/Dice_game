@@ -10,11 +10,7 @@ function RoleDice({ roleDice, currentDice }) {
   return (
     <DiceContainer>
       <div className="dice" onClick={roleDice}>
-<<<<<<< HEAD
         <img src={diceImages[currentDice - 1]} alt={`dice showing ${currentDice}`} />
-=======
-     <img src={`/images/dice/dice_${currentDice}.png`} alt="dice 1" />
->>>>>>> a748647d618f1ee40e876a9d5ad867d23a5f24f0
       </div>
       <p>Click on Dice to roll</p>
     </DiceContainer>
