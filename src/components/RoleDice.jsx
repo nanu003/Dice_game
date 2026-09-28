@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
+const diceImages = Array.from(
+  { length: 6 },
+  (_, index) => `${import.meta.env.BASE_URL}Images/dice/dice_${index + 1}.png`,
+)
+
 
 function RoleDice({ roleDice, currentDice }) {
   return (
     <DiceContainer>
       <div className="dice" onClick={roleDice}>
-        <img src={`/Images/dice/dice_${currentDice}.png`} alt="dice 1" />
+        <img src={diceImages[currentDice - 1]} alt={`dice showing ${currentDice}`} />
       </div>
       <p>Click on Dice to roll</p>
     </DiceContainer>
