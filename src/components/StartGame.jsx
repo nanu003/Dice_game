@@ -1,6 +1,7 @@
 
 import styled from 'styled-components'
 import {Button } from '../styled/button'
+import diceImage from '../assets/dices.png'
 
 
 const Container = styled.div`
@@ -23,7 +24,7 @@ function StartGame({toggle}) {
   return (
     <Container>
       <div>
-        <img src="/dice.png" alt='Dice' />
+        <img src={diceImage} alt='Dice' />
       </div>
       <div className='content'>
         <h1>DICE GAME</h1>
